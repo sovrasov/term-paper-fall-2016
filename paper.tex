@@ -12,6 +12,7 @@
 \usepackage{longtable}
 \usepackage{indentfirst}
 \usepackage{unicode-math}
+\usepackage{subfig}
 \usepackage[english, russian]{babel}
 \usepackage[width=1.2\textwidth]{caption}
 
@@ -68,7 +69,7 @@
 				%style=gost-numeric,
         sorting=none,
 				autolang=other]{biblatex}
-\addbibresource{bibliography.bib}
+\addbibresource{bibliography}
 
 
 % Sections style redefinition
@@ -137,6 +138,8 @@
   \renewcommand{\thelstlisting}{\thesection\arabic{lstlisting}}
 }
 
+\newtheorem{hypothesis}{Hypothesis}
+
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator{\sign}{sign}
@@ -158,6 +161,7 @@
 \newpage
 \setcounter{page}{1}
 \input{introduction}
+\input{localTuning}
 \input{conclusion}
 
 \newpage
